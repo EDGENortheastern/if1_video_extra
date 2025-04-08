@@ -1,4 +1,4 @@
-# Temperature Converter with  a Python Script
+# Temperature Converter with a Python Script
 
 ## User Documentation
 
@@ -39,3 +39,38 @@ Enter temperature in Celsius: 0
 0.0°C is equal to 32.00°F
 ```
 
+## Technical Documentation
+
+### Project Structure
+
+```
+if1_video_extra/
+├── temp.py           # Main script for temperature conversion
+├── test_temp.py      # Unit tests for the conversion function
+├── requirements.txt  # (empty or not needed for now)
+```
+
+### temp.py
+
+This script defines and runs a Celsius-to-Fahrenheit converter. It includes:
+
+- A function `celsius_to_far(celsius_temp)` that uses the formula:
+  ```
+  Fahrenheit = Celsius × 9/5 + 32
+  ```
+- A prompt for user input using `input()`
+- Conversion of that input into a float
+- Error handling using `try/except` to catch invalid (non-numeric) inputs
+
+### test_temp.py
+
+This file contains unit tests for the converter function using the `unittest` module. It includes tests for:
+
+- Valid numeric conversions
+- Edge cases like 0°C
+- Exception handling for invalid input types (if added later)
+
+### Dependencies
+
+- The script uses only Python’s built-in libraries: `unittest` and `input()`.
+- No external packages or installations are required.
